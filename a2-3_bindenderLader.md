@@ -1,16 +1,16 @@
 # Aufgabe 2
 
-Phase 1: Allocation:
-	cntdwn.o : Startadresse 0x08048000 Ende: 0x08048094
-	libc.o : Startadresse 0x08048094 Ende: 0x0804856A
+Phase 1: Allocation:  
+	cntdwn.o : Startadresse 0x08048000 Ende: 0x08048094  
+	libc.o : Startadresse 0x08048094 Ende: 0x0804856A  
 
-Phase 2: reallocation:
-	 siehe Symboltabelle (ESTAB), alle Modul-Sätze wurden verwendet um die Adressen anzupassen.
-	PROGADDR: 08048000
-	EXECADDR: 08048000
+Phase 2: reallocation:  
+	 siehe Symboltabelle (ESTAB), alle Modul-Sätze wurden verwendet um die Adressen anzupassen.  
+	PROGADDR: 08048000  
+	EXECADDR: 08048000  
 
-Speicher:
-hier kommen zuerst die T-Sätze aus cntdw.o
+Speicher:  
+hier kommen zuerst die T-Sätze aus cntdw.o  
 08048000:	 0540    0C4050  02500100000004  
 0804800C:	 0C100100000039  0C45010000000400000030  0A104500000004  
 08048025:	 0B010000004D    0C02C000000090  05010804807D  
@@ -19,7 +19,7 @@ hier kommen zuerst die T-Sätze aus cntdw.o
 08048056:	 050100000000    08010804817E    01500100000004  
 08048069:	 0C000100000001  0C100100000000  0D0100000080  
 0804807D: 	 48656C6C6F20576F13100  
-08048094: anfang von libc, printf
+08048094: beginn von libc, printf
 0804817E: exit
 080481CE: malloc
 080482D2: scanf
